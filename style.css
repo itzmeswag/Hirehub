@@ -1,0 +1,528 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #0b0f19;
+  color: #f8fafc;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.custom-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background-color: #0f172a;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  gap: 20px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #60a5fa;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #f8fafc;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #60a5fa;
+}
+
+/* Buttons */
+.nav1-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav1-buttons .btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.custom_login-btn {
+  background: linear-gradient(45deg, #2563eb, #60a5fa);
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.6);
+}
+
+.custom_login-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(96, 165, 250, 0.9);
+  color: #ffffff;
+}
+
+.custom_signup-btn {
+  background: linear-gradient(45deg, #2563eb, #60a5fa);
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.6);
+}
+
+.custom_signup-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(96, 165, 250, 0.9);
+  color: #ffffff;
+}
+
+/* Carousel */
+.carousel {
+  margin-top: 0;
+}
+
+.carousel-inner {
+  border-radius: 0;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+/* Featured Jobs */
+.featured-jobs {
+  padding: 70px 8%;
+  text-align: center;
+  background-color: #0b1120;
+}
+
+.featured-jobs h2 {
+  font-size: 34px;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.job-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.job-card {
+  background: #111827;
+  width: 300px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.35);
+  text-align: left;
+  border: 1px solid #1f2937;
+}
+
+.job-card h3 {
+  margin-bottom: 10px;
+  color: #60a5fa;
+  font-size: 22px;
+}
+
+.job-card p {
+  margin-bottom: 8px;
+  color: #f1f5f9;
+  font-size: 15px;
+}
+
+.apply-btn {
+  display: inline-block;
+  margin-top: 12px;
+  background: #2563eb;
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.apply-btn:hover {
+  opacity: 0.9;
+  color: #ffffff;
+}
+
+/* Why Choose Us */
+.why-choose-us {
+  padding: 70px 8%;
+  background: #0f172a;
+  text-align: center;
+}
+
+.why-choose-us h2 {
+  font-size: 34px;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.feature-box {
+  background: #111827;
+  width: 300px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.35);
+  border: 1px solid #1f2937;
+}
+
+.feature-box h3 {
+  margin-bottom: 10px;
+  color: #60a5fa;
+  font-size: 22px;
+}
+
+.feature-box p {
+  color: #f1f5f9;
+  font-size: 15px;
+}
+
+/* Stats */
+.stats {
+  padding: 70px 8%;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: #0b1120;
+}
+
+.stat-box {
+  background: #111827;
+  width: 220px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.35);
+  border: 1px solid #1f2937;
+}
+
+.stat-box h3 {
+  font-size: 32px;
+  color: #60a5fa;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.stat-box p {
+  color: #f8fafc;
+  font-size: 16px;
+}
+
+/* Top Companies */
+.top-companies {
+  padding: 70px 8%;
+  background-color: #0f172a;
+  text-align: center;
+}
+
+.top-companies h2 {
+  font-size: 34px;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.company-logos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.company-box {
+  background: #1e293b;
+  color: #ffffff;
+  padding: 20px 35px;
+  border-radius: 10px;
+  font-weight: bold;
+  min-width: 140px;
+  border: 1px solid #334155;
+}
+
+/* CTA */
+.cta {
+  background: linear-gradient(to right, #111827, #1d4ed8);
+  color: #ffffff;
+  text-align: center;
+  padding: 80px 8%;
+}
+
+.cta h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.cta p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: #eff6ff;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: #60a5fa;
+  color: #0f172a;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cta-btn:hover {
+  opacity: 0.9;
+  color: #0f172a;
+}
+
+/* Footer */
+.footer {
+  background-color: #030712;
+  color: #ffffff;
+  padding: 50px 8% 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer h3,
+.footer h4 {
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.footer p,
+.footer ul li a {
+  color: #e2e8f0;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer ul li {
+  margin-bottom: 8px;
+}
+
+.footer ul li a {
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  color: #60a5fa;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #374151;
+  padding-top: 15px;
+  font-size: 14px;
+  color: #cbd5e1;
+}
+
+/* About Page */
+.about-section {
+  padding: 80px 8%;
+  text-align: center;
+  background-color: #030712;
+}
+
+.about-section h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #60a5fa;
+}
+
+.about-section p {
+  max-width: 700px;
+  margin: auto;
+  color: #f1f5f9;
+  margin-bottom: 40px;
+}
+
+.about-cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.about-box {
+  background: #111827;
+  padding: 25px;
+  border-radius: 10px;
+  width: 280px;
+  border: 1px solid #1f2937;
+}
+
+.about-box h3 {
+  color: #60a5fa;
+  margin-bottom: 10px;
+}
+
+.about-box p {
+  color: #f1f5f9;
+}
+
+/* Contact Page */
+.contact-section {
+  padding: 80px 8%;
+  text-align: center;
+  background-color: #030712;
+}
+
+.contact-section h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #60a5fa;
+}
+
+.contact-section p {
+  color: #f1f5f9;
+  margin-bottom: 30px;
+  
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 14px;
+  border-radius: 6px;
+  border: 1px solid #334155;
+  background: #1e293b;
+  color: #ffffff;
+  outline: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #cbd5e1;
+}
+
+.contact-form button {
+  padding: 14px;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .custom-navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav1-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .carousel-item img {
+    height: 350px;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo {
+    font-size: 24px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav1-buttons .btn {
+    margin: 5px;
+  }
+
+  .carousel-item img {
+    height: 250px;
+  }
+
+  .job-card,
+  .feature-box,
+  .stat-box,
+  .about-box {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .cta h2,
+  .featured-jobs h2,
+  .why-choose-us h2,
+  .top-companies h2,
+  .about-section h1,
+  .contact-section h1 {
+    font-size: 28px;
+  }
+}
+.modal-content {
+  border-radius: 14px;
+}
+
+.modal .form-control {
+  border: 1px solid #475569;
+}
+
+.modal .form-control:focus {
+  box-shadow: none;
+  border-color: #60a5fa;
+}
