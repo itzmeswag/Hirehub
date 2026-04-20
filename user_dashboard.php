@@ -7,7 +7,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['user_role'] !== 'user') {
     exit();
 }
 
-$conn = new mysqli("sql305.infinityfree.com", "if0_41614068", "Swagata1077", "if0_41614068_test");
+$conn = new mysqli("localhost", "root", "mypassword", "hirehub");
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
