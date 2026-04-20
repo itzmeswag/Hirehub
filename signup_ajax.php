@@ -1,7 +1,6 @@
 <?php
 header('Content-Type: application/json');
-
-$conn = new mysqli("sql305.infinityfree.com", "if0_41614068", "Swagata1077", "if0_41614068_test");
+$conn = new mysqli("localhost", "root", "mypassword", "hirehub");
 
 if ($conn->connect_error) {
     echo json_encode(["status" => "error", "message" => "Database connection failed."]);
