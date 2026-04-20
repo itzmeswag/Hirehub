@@ -9,7 +9,7 @@ HireHub is a full-stack job portal web application where users can apply for job
 - MySQL
 
 ### Project Link
-[View Repository](https://github.com/YOUR-USERNAME/Hirehub)
+[View Repository](https://github.com/itzmeswag/Hirehub)
 
 ### Live Demo
 [Open Website](https://hirehub.great-site.net/)
