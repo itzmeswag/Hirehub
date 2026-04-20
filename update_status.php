@@ -5,7 +5,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['user_role'] !== 'company') {
     exit();
 }
 
-$conn = new mysqli("sql305.infinityfree.com", "if0_41614068", "Swagata1077", "if0_41614068_test");
+$conn = new mysqli("localhost", "root", "mypassword", "hirehub");
 
 $id = isset($_GET['id']) ? (int)$_GET['id'] : 0;
 $status = $_GET['status'] ?? 'Pending';
